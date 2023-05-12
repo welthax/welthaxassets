@@ -19,7 +19,7 @@ public class MailSenderService {
 	public void sendEmail(String toEmail, String subject, String body) throws MessagingException, UnsupportedEncodingException {
 		MimeMessage message = mailSender.createMimeMessage();
 		MimeMessageHelper helper = new MimeMessageHelper(message);
-		helper.setFrom("cryptospaceassets@gmail.com", "Cryptospace Assets");
+		helper.setFrom("welthaxassets@gmail.com", "Welthax Assets");
 		helper.setTo(toEmail);
 		helper.setSubject(subject);
 		helper.setText(body, true);
